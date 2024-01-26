@@ -1,6 +1,8 @@
-import ExpenseItem from './Components/ExpenseItem';
+import React from 'react';
 
-function App() {
+import ExpenseItem from './Components/Expenses/ExpenseItem';
+
+const App = () => {
   const expenses = [
     {
       id: 'el1',
@@ -41,7 +43,7 @@ function App() {
           title={expense.title}
           amount={expense.amount}
           date={expense.date}
-          location={expense.location} // Pass the location to ExpenseItem
+          location={expense.location}
         />
       ))}
     </div>
